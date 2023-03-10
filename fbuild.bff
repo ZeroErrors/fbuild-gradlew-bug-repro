@@ -1,0 +1,9 @@
+Exec('Test')
+{
+    .ExecExecutable        = 'C:\Windows\System32\cmd.exe'
+    .ExecArguments         = '/C gradlew.bat --daemon tasks'
+    .ExecWorkingDir        = 'GradleProject'
+    .ExecOutput            = 'output/gradlew.log'
+    .ExecUseStdOutAsOutput = true
+    .ExecAlways            = true
+}
